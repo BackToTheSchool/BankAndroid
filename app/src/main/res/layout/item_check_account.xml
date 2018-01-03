@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="15dp"
+    android:background="@color/white_grey">
+    <TextView
+        android:id="@+id/check_accnum_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="account_number"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/check_balance_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="balance"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_gravity="right"/>
+
+</LinearLayout>
