@@ -3,43 +3,77 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    android:padding="15dp">
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/signup_name_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="이름"
-        android:layout_marginBottom="20dp"/>
-    <EditText
-        android:id="@+id/signup_id_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="아이디"
-        android:layout_marginBottom="20dp"/>
-    <EditText
-        android:id="@+id/signup_pw_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="패스워드"
-        android:layout_marginBottom="20dp"
-        android:inputType="textPassword"/>
-    <EditText
-        android:id="@+id/signup_birth_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="생년월일"
-        android:inputType="date"
-        android:layout_marginBottom="20dp"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signup_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="이름"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:id="@+id/login_signup_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:text="회원가입"
-        android:layout_marginBottom="20dp"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"><EditText
+                android:id="@+id/signup_id_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="아이디"
+                android:layout_marginBottom="20dp"
+                android:inputType="text"
+                android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signup_pw_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="패스워드"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/signup_birth_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="생년월일"
+                    android:inputType="date"
+                    android:layout_marginBottom="20dp"
+                    android:imeOptions="actionDone"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/signup_action_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="회원가입"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

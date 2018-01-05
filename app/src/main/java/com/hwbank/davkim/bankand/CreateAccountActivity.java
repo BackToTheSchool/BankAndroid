@@ -19,7 +19,10 @@ public class CreateAccountActivity extends AppCompatActivity {
                 new Button.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        Intent createResultIntent;
+                        createResultIntent = new Intent(CreateAccountActivity.this, CreateAccountResultActivity.class);
                         Toast.makeText(CreateAccountActivity.this, "계좌생성 완료!", Toast.LENGTH_SHORT).show();
+                        startActivity(createResultIntent);
                         CreateAccountActivity.this.finish();
                     }
                 }

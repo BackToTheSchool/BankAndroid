@@ -15,7 +15,7 @@ public class TransactionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transaction);
-        String transType = getIntent().getStringExtra("type");
+        final String transType = getIntent().getStringExtra("type");
 
         Button transButton = findViewById(R.id.trans_action_btn);
         TextInputLayout objAccTil = findViewById(R.id.trans_objacc_til);
@@ -48,7 +48,11 @@ public class TransactionActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        Intent resultIntent
+                                = new Intent(TransactionActivity.this,TransactionResultActivity.class);
+                        resultIntent.putExtra("type", transTypeKr);
                         Toast.makeText(TransactionActivity.this, transTypeKr+" 완료!", Toast.LENGTH_SHORT).show();
+                        startActivity(resultIntent);
                         SelectAccountActivity.saa.finish();     //selectAccountActivity 꺼주기
                         TransactionActivity.this.finish();
                     }

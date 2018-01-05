@@ -20,8 +20,19 @@ public class MainActivity extends AppCompatActivity {
 
         gotoIntent(R.id.main_deposit_txt,SelectAccountActivity.class,"deposit");
         gotoIntent(R.id.main_withdraw_txt,SelectAccountActivity.class,"withdraw");
-        gotoIntent(R.id.main_logout_txt,LoginActivity.class);
-    }
+
+        TextView logoutTxt = findViewById(R.id.main_logout_txt);
+        logoutTxt.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent logoutIntent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(logoutIntent);
+                    MainActivity.this.finish();
+                }
+            }
+        );
+}
 
     /// View와 목적 액티비티를 넣으면 해당 액티비티로 넘어가는 메소드
     public void gotoIntent(int viewId, java.lang.Class objActivity) {
