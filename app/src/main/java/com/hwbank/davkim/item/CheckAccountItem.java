@@ -1,4 +1,4 @@
-package com.hwbank.davkim.bankand;
+package com.hwbank.davkim.item;
 
 /**
  * Created by davki on 2018-01-06.

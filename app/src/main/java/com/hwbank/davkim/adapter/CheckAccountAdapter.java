@@ -1,7 +1,6 @@
-package com.hwbank.davkim.bankand;
+package com.hwbank.davkim.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +9,12 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.hwbank.davkim.bankand.R;
+import com.hwbank.davkim.item.CheckAccountItem;
+
 import java.util.List;
+
+//import com.hwbank.davkim.item.CheckAccountItem;
 
 
 /**

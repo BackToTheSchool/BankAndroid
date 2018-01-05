@@ -6,8 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.hwbank.davkim.adapter.CheckAccountAdapter;
+import com.hwbank.davkim.item.CheckAccountItem;
+import com.hwbank.davkim.java.IntComma;
+
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class CheckAccountActivity extends AppCompatActivity{
 

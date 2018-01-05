@@ -1,4 +1,4 @@
-package com.hwbank.davkim.bankand;
+package com.hwbank.davkim.java;
 
 import java.text.DecimalFormat;
 
